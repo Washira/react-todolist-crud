@@ -17,7 +17,7 @@ function Todo({ todo }) {
   return (
     <div>
       <h1 className={todo.complete ? 'complete' : ''}>{todo.title}</h1>
-      <button className="dalete-btn" onClick={deleteTodo}>
+      <button className="delete-btn" onClick={deleteTodo}>
         Delete
       </button>
       <button className="complete-btn" onClick={completeTodo}>Complete</button>

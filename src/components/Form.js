@@ -6,21 +6,25 @@ function Form() {
 
   const handleOnChange = (e) => {
     setTitle(e.target.value);
+    e.preventDefault();
   };
 
-  const createTodo = () => {
+  const createTodo = (e) => {
     const todoRef = firebase.database().ref("Todo");
     const todo = {
       title,
       complete: false,
     };
     todoRef.push(todo);
+    e.preventDefault();
   };
 
   return (
     <div>
-      <input type="text" onChange={handleOnChange} value={title}/>
-      <button className="add-btn" onClick={createTodo}>Add Todo</button>
+      <input type="text" onChange={handleOnChange} value={title} />
+      <button className="add-btn" onClick={createTodo}>
+        Add
+      </button>
     </div>
   );
 }

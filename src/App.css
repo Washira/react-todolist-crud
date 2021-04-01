@@ -7,6 +7,38 @@
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
+.List {
+  text-align: center;
+  width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
 .complete {
   text-decoration: line-through;
+}
+
+.add-btn {
+  margin-left: 1rem;
+  padding: .5rem 1rem;
+  background: #43cb28;
+  color: #fff;
+  border: none;
+}
+
+.delete-btn {
+  padding: .5rem 1rem;
+  background: #cb2828;
+  color: #fff;
+  border: none;
+}
+
+.complete-btn {
+  margin-left: 1rem;
+  padding: .5rem 1rem;
+  background: #8a28cb;
+  color: #fff;
+  border: none;
 }

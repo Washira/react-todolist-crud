@@ -20,7 +20,7 @@ function Todolist() {
   return (
     <div>
       {todoList
-        ? todoList.map((todo, index) => <Todo todo={todo} key={index} />)
+        ? todoList.map((todo, index) => <div className="List"><Todo todo={todo} key={index} /></div>)
         : ""}
     </div>
   );
