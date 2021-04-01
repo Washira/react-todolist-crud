@@ -42,3 +42,12 @@
   color: #fff;
   border: none;
 }
+
+@media only screen and (max-width: 375px) {
+  .App {
+    width: 300px;
+  }
+  .List {
+    width: 200px;
+  }
+}
