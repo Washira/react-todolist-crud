@@ -6,7 +6,6 @@ function Form() {
 
   const handleOnChange = (e) => {
     setTitle(e.target.value);
-    e.preventDefault();
   };
 
   const createTodo = (e) => {
@@ -21,10 +20,12 @@ function Form() {
 
   return (
     <div>
-      <input type="text" onChange={handleOnChange} value={title} />
-      <button className="add-btn" onClick={createTodo}>
-        Add
-      </button>
+      <form onSubmit={createTodo}>
+        <input type="text" onChange={handleOnChange} />
+        <button className="add-btn" type="submit">
+          Add
+        </button>
+      </form>
     </div>
   );
 }
